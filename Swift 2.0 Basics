@@ -1,0 +1,133 @@
+// Project Euler #1 Solution in Swift
+
+//////////////////////
+////// Strings ///////
+//////////////////////
+
+// Constants
+
+let language = "Swift"
+
+// Naming Conventions
+
+// Rule #1: Spaces not allowed
+
+let programmingLanguage = "Objective-C"
+
+// Rule #2: Use camelCase
+
+let favoriteProgrammingLanguage = "Swift"
+
+// Concatination
+
+let country = "United States of America"
+let state = "California"
+let city = "San Diego"
+let street = "West Street"
+
+let concatinatedAddress = country + ", " + state + ", " + city
+
+// String Interpolation
+
+let interpolatedAddress = "\(country), \(state), \(city)"
+
+let interpolatedStreetAddress = "\(222) \(street)"
+
+print(interpolatedAddress)
+print(concatinatedAddress)
+print(interpolatedStreetAddress)
+
+//////////////////////
+////// Integers //////
+//////////////////////
+
+let year = 2014 // Int
+
+////////////////////////////
+// Floating Point Numbers //
+////////////////////////////
+
+var version = 2.0 // Double
+
+////////////////////////////
+//////// Boolean ///////////
+////////////////////////////
+
+////////////////////////////
+/////// Type Safety ////////
+////////////////////////////
+
+var someString = ""
+// someString = 12.0
+
+let bestPlayer: String = "Michael Jordan"
+let averagePointsPerGame: Double = 30.1
+let yearOfRetirement: Int = 2003
+let hallOfFame: Bool = true
+
+////////////////////////////
+//////// Operators /////////
+////////////////////////////
+
+let height = 12.0 // in feet
+let width = 10.0 // in feet
+
+let area = height * width
+
+print(area)
+
+// 1 sq meter = 1 sq. foot / 10.764
+
+let areaInSquareMeters = area/10.764
+print(areaInSquareMeters)
+
+// Comparison Operators
+
+let string1 = "Hello!"
+let string2 = "Hello!"
+let string3 = "hello"
+
+print(string1 == string2)
+print(string1 != string2)
+print(string1 != string3)
+
+print(1 > 2)
+
+// Operator Precedence
+
+var x = 100 + 100 - ((5 * 2) / 3) % 7
+
+print(x)
+
+// Uniary Operators
+
+var levelScore = 0
+levelScore = levelScore + 1
+
+var totalScore = levelScore
+totalScore = ++levelScore
+
+totalScore = --levelScore
+
+totalScore += 5
+totalScore = totalScore + 5
+
+// NOT Operator
+
+let on = true
+let off = !on
+
+print(1 != 2)
+
+print(levelScore)
+print(totalScore)
+print(on)
+print(off)
+
+
+
+
+
+
+
+
