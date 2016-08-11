@@ -1,0 +1,103 @@
+//////////////////////
+///// Collections ////
+//////////////////////
+
+// Arrays
+print("Arrays:")
+
+var todo: [String] = [
+    "Finish collections course", 
+    "Buy groceries", 
+    "Respond to emails"]
+    
+todo.append("Pick up dry cleaning")
+
+todo += ["Order book online"]
+print(todo)
+
+let secondTaskList = ["Mow the lawn"]
+
+print(secondTaskList)
+
+// Reading From Arrays
+print("Reading From Arrays:")
+
+let firstTask = todo[0]
+let thirdTask = todo[2]
+
+todo[4] = "Brush teeth"
+print(todo)
+print("Brush Teeth was added as the 5th item using this method^")
+print(firstTask)
+print(thirdTask)
+print("Assigning constants to certain items from the todo array using this method^")
+
+// Insterting Using Indexes
+print("Inserting Using Indexes:")
+
+todo.insert("Pay Bills", atIndex: 2)
+
+print(todo)
+print("Pay Bills was added after the 3rd items uding this method^")
+
+// Removing Items
+print("Removing Items:")
+
+todo.removeAtIndex(3)
+
+print(todo)
+print("The 4th item was removed using this method^")
+
+// Dealing with non-existent data
+
+// let lastItem = todo[5]
+
+/////////////////////////
+///// Dictionaries //////
+/////////////////////////
+
+/*
+             Airport Code          Airport Name
+             (Key)              (Value)
+             
+             LGA               La Guardia
+             LHR               Heathrow
+             CDG               Charles De Gaulle
+             HKG               Hong Kong International
+             DXB               Dubai International
+*/
+
+print("Using Dictionaries:")
+
+var airportCodes: [String: String] = [
+    "LGA": "La Guardia", 
+    "LHR": "Heathrow",
+    "CDG": "Charles De Gualle",
+    "HKG": "Hong Kong International",
+    "DXB": "Dubai International"
+]
+
+// Read from a Dictionary
+print("Reading a dictionary:")
+
+// Inserting Key Value Pairs
+
+airportCodes["SYD"] = "Sydney Airport"
+
+airportCodes["LGA"] = "La Guardia International Airport"
+
+airportCodes.updateValue("Dublin Airport", forKey:"DUB")
+
+// Removing Key Value Pairs
+
+airportCodes["DXB"] = nil
+airportCodes.removeValueForKey("DUB")
+
+print(airportCodes)
+
+// Dealing with non-existent data
+
+let airportName = airportCodes["LGA"]
+
+let orlandoAirport = airportCodes["MCO"]
+
